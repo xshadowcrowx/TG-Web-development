@@ -28,10 +28,12 @@ Geef in je antwoord voor elk element een toelichting.
 
 ## Antwoorden:
 
-1. The internet is a network of networks...
+1. The internet is a _(global)_ network of networks, whereas the world wide web are the pages _(websites)_ we visit while we're online. For example: highways and public transportation are everywhere, but we're free to choose which locations we visit and when. In this example the internet is the infrastructure, and the world wide web helps us get to the desired location.
 2. Basically **HTML** is for building the page structure, **CSS** is for the aesthetics _(a.k.a. UX)_ and **Javascript** is for creating animations and communicating with a backend data server.
 
-3. testing a second time _(uitleggen waar de html tags voor zijn...)_
+3. An HTML tag is a constituent part of an HTML element. These terms are sometimes used interchangeably, but in reality they are different things. See image: 
+
+![alt text](https://www.w3.org/community/webed/wiki/images/3/39/Elements.png "HTML element syntax")
 
 4. The HTML ```<html>``` element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
 
@@ -47,12 +49,33 @@ The HTML ```<body>```Element represents the content of an HTML document. There c
 
 [This example](https://raw.githubusercontent.com/mdn/learning-area/master/html/introduction-to-html/html-text-formatting/text-start.html "Github link") is not an example of good code. At the very least it's missing headings, paragraphs and unordered lists.
 
-7. See table below:
+7. See table below...
 
-Inline Element | Block-level elements
-does not start on a new line. | always start on a new line.
-An inline element only takes up as much width as necessary. | always takes up the full width available _(100% left & right)_.
-&nbsp; | A block level element has a top and a bottom margin, whereas an inline element does not.
+| Inline Element | Block-level elements |
+| --- | --- |
+| does not start on a new line. | always start on a new line. |
+| An inline element only takes up as much width as necessary. | always takes up the full width available _(100% left & right)_. |
+| &nbsp; | A block level element has a top and a bottom margin, whereas an inline element does not. |
 
-8. 
+8. Nested elements are elements within other elements. Example:
+```<div>```
+  ```<div>```
+    ```<p>```this paragraph is located inside a nested div...```</p>```
+  ```</div>```
+```</div>``` 
 
+9. Many HTML tags have semantic meaning. That is, the element itself conveys some information about the type of content contained between the opening and closing tags.
+
+For example, when a browser encounters an h1 heading it interprets that tag to mean that the contents of the h1 element constitute the most important heading of the section that contains the element.
+
+The semantic meaning of an h1 tag is that it is used to identify the most important header of a specific web page or section.
+
+10. Elements and their uses:
+
+```<header>``` Header.
+```<footer>``` Footer.
+```<main>``` The main content area below the header and above the footer.
+```<nav>``` Navigation. 
+```<section>``` A section area... commonly used within the main.
+```<aside>```
+```<article>```
