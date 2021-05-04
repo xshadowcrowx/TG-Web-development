@@ -1,5 +1,5 @@
 
-====== HTML week 1: intro vragen
+= HTML week 1: intro vragen
 
 1.	Wat is het verschil tussen het internet en het world wide web?
 2.	Wat is het verschil tussen HTML, CSS en JavaScript?
@@ -23,7 +23,7 @@ Geef in je antwoord voor elk element een toelichting.
 ```<article>```
 
 
------- Antwoorden:
+## Antwoorden:
 
 1. The internet is a network of networks...
 2. Test...
