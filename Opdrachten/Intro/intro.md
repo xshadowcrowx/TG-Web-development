@@ -71,15 +71,15 @@ Geef in je antwoord voor elk element een toelichting.
 
 Example:
 
-```<div>```
+> ```<div>```
 
-  ```<div>```
+>>  ```<div>```
 
-    ```<p>``` this paragraph is located inside a nested div... ```</p>```
+>>>    ` <p> this paragraph is located inside a nested div... </p> `
 
-  ```</div>```
+>>  ```</div>```
 
-```</div>``` 
+> ```</div>``` 
 
 
 9. Many HTML tags have semantic meaning. That is, the element itself conveys some information about the type of content contained between the opening and closing tags.
