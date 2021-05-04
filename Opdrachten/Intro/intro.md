@@ -34,7 +34,7 @@ Geef in je antwoord voor elk element een toelichting.
 
 3. An HTML tag is a constituent part of an HTML element. These terms are sometimes used interchangeably, but in reality they are different things. See image below... 
 
-> ![alt text](https://www.tutorialrepublic.com/lib/images/html-element.png "HTML element syntax")
+> ![alt text](https://citsf221.community.uaf.edu/wp-content/uploads/sites/146/2009/08/taganatomy.png "HTML element syntax")
 
 4. The `<html>` , `<head>` and `<body>` tags explained... 
 
@@ -57,15 +57,23 @@ Geef in je antwoord voor elk element een toelichting.
 | Inline Element | Block-level elements |
 | --- | --- |
 | does not start on a new line. | always start on a new line. |
-| An inline element only takes up as much width as necessary. | always takes up the full width available _(100% left & right)_. |
+| An inline element only takes up as much width as necessary. | always takes up the full width available (100% left and right!). |
 | &nbsp; | A block level element has a top and a bottom margin, whereas an inline element does not. |
 
-8. Nested elements are elements within other elements. Example:
+8. Nested elements are elements within other elements. 
+
+Example:
+
 ```<div>```
+
   ```<div>```
-    ```<p>```this paragraph is located inside a nested div...```</p>```
+
+    ```<p>``` this paragraph is located inside a nested div... ```</p>```
+
   ```</div>```
+
 ```</div>``` 
+
 
 9. Many HTML tags have semantic meaning. That is, the element itself conveys some information about the type of content contained between the opening and closing tags.
 
@@ -76,9 +84,15 @@ The semantic meaning of an h1 tag is that it is used to identify the most import
 10. Elements and their uses:
 
 ```<header>``` represents introductory content, typically a group of introductory or navigational aids.
+
 ```<footer>``` represents a footer for its nearest sectioning content or sectioning root element. A ```<footer>``` typically contains information about the author of the section, copyright data or links to related documents.
+
 ```<main>``` represents the dominant content of the ```<body>``` of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+
 ```<nav>``` represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. 
-```<section>``` represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it
+
+```<section>``` represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.
+
 ```<aside>``` represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.
+
 ```<article>``` represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
