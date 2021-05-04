@@ -72,13 +72,13 @@ Geef in je antwoord voor elk element een toelichting.
 Example:
 
 > ```<div>```
-
+>
 >>  ```<div>```
-
+>>
 >>>    ` <p> this paragraph is located inside a nested div... </p> `
-
+>>
 >>  ```</div>```
-
+>
 > ```</div>``` 
 
 
