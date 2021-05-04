@@ -30,11 +30,14 @@ Geef in je antwoord voor elk element een toelichting.
 
 1. The internet is a _(global)_ network of networks, whereas the world wide web are the pages _(websites)_ we visit while we're online. For example: highways and public transportation are everywhere, but we're free to choose which locations we visit and when. In this example the internet is the infrastructure, and the world wide web helps us get to the desired location.
 
+
 2. Basically **HTML** is for building the page structure, **CSS** is for the aesthetics _(a.k.a. UX)_ and **Javascript** is for creating animations and communicating with a backend data server.
+
 
 3. An HTML tag is a constituent part of an HTML element. These terms are sometimes used interchangeably, but in reality they are different things. See image below... 
 
 > ![alt text](https://citsf221.community.uaf.edu/wp-content/uploads/sites/146/2009/08/taganatomy.png "HTML element syntax")
+
 
 4. The `<html>` , `<head>` and `<body>` tags explained... 
 
@@ -44,13 +47,16 @@ Geef in je antwoord voor elk element een toelichting.
 
 > The HTML ```<body>```Element represents the content of an HTML document. There can be only one ```<body>``` element in a document.
 
+
 5. HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type.
 
 ```<abbr id="anId" class="aClass" style="color:blue;" title="Hypertext Markup Language" data-*="global Attributes" >HTML</abbr>```
 
-6. A good HTML structure is important because it forms the foundation upon which the rest of the wesite or application is built upon.
 
-[This example](https://raw.githubusercontent.com/mdn/learning-area/master/html/introduction-to-html/html-text-formatting/text-start.html "Github link") is not an example of good code. At the very least it's missing headings, paragraphs and unordered lists.
+6. A good HTML structure is important because it forms the foundation upon which the rest of the website or application is built upon.
+
+[This](https://raw.githubusercontent.com/mdn/learning-area/master/html/introduction-to-html/html-text-formatting/text-start.html "Github link") is not an example of good code. At the very least it's missing headings, paragraphs and unordered lists.
+
 
 7. See table below...
 
@@ -59,6 +65,7 @@ Geef in je antwoord voor elk element een toelichting.
 | does not start on a new line. | always start on a new line. |
 | An inline element only takes up as much width as necessary. | always takes up the full width available (100% left and right!). |
 | &nbsp; | A block level element has a top and a bottom margin, whereas an inline element does not. |
+
 
 8. Nested elements are elements within other elements. 
 
@@ -80,6 +87,7 @@ Example:
 For example, when a browser encounters an h1 heading it interprets that tag to mean that the contents of the h1 element constitute the most important heading of the section that contains the element.
 
 The semantic meaning of an h1 tag is that it is used to identify the most important header of a specific web page or section.
+
 
 10. Elements and their uses:
 
