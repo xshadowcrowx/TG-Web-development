@@ -23,23 +23,26 @@ Geef in je antwoord voor elk element een toelichting.
 ```<article>```
 
 
-
+&nbsp;
 
 
 ## Antwoorden:
 
 1. The internet is a _(global)_ network of networks, whereas the world wide web are the pages _(websites)_ we visit while we're online. For example: highways and public transportation are everywhere, but we're free to choose which locations we visit and when. In this example the internet is the infrastructure, and the world wide web helps us get to the desired location.
+
 2. Basically **HTML** is for building the page structure, **CSS** is for the aesthetics _(a.k.a. UX)_ and **Javascript** is for creating animations and communicating with a backend data server.
 
-3. An HTML tag is a constituent part of an HTML element. These terms are sometimes used interchangeably, but in reality they are different things. See image: 
+3. An HTML tag is a constituent part of an HTML element. These terms are sometimes used interchangeably, but in reality they are different things. See image below... 
 
-![alt text](https://www.w3.org/community/webed/wiki/images/3/39/Elements.png "HTML element syntax")
+> ![alt text](https://www.tutorialrepublic.com/lib/images/html-element.png "HTML element syntax")
 
-4. The HTML ```<html>``` element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+4. The `<html>` , `<head>` and `<body>` tags explained... 
 
-The HTML ```<head>``` element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+> The HTML ```<html>``` element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
 
-The HTML ```<body>```Element represents the content of an HTML document. There can be only one ```<body>``` element in a document.
+> The HTML ```<head>``` element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+
+> The HTML ```<body>```Element represents the content of an HTML document. There can be only one ```<body>``` element in a document.
 
 5. HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type.
 
@@ -72,10 +75,10 @@ The semantic meaning of an h1 tag is that it is used to identify the most import
 
 10. Elements and their uses:
 
-```<header>``` Header.
-```<footer>``` Footer.
-```<main>``` The main content area below the header and above the footer.
-```<nav>``` Navigation. 
-```<section>``` A section area... commonly used within the main.
-```<aside>```
-```<article>```
+```<header>``` represents introductory content, typically a group of introductory or navigational aids.
+```<footer>``` represents a footer for its nearest sectioning content or sectioning root element. A ```<footer>``` typically contains information about the author of the section, copyright data or links to related documents.
+```<main>``` represents the dominant content of the ```<body>``` of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+```<nav>``` represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. 
+```<section>``` represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it
+```<aside>``` represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.
+```<article>``` represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
