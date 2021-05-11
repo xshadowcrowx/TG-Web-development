@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Opdrachten 2 &AMP; 3</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+
+    p ul table form { font-family: 'Open Sans', sans-serif; }
+
+    .tableBorder {
+      padding: 1em;
+      border: 2px solid rgb(200, 200, 200);
+    }
+    
+    .tableBackground {
+      background-color: lightgrey;
+    }
+
+    fieldset {
+      display: block;
+      box-sizing: border-box;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding-top: 0.35em;
+      padding-bottom: 0.625em;
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+      border: 2px groove (internal value);
+    }
+
+  </style>
+
+</head>
+<body>
+
+<!-- 11 --><h3 id="11">(11) Headers are important to humans and search engines because...</h3>
+
+<p>Headings help users and search engines to read and understand text. For example, they act as signposts for the readers and make it easier for them to figure out what a post or page is about. Headings also define which parts of your content are important, and show how they’re interconnected. <a href="https://yoast.com/how-to-use-headings-on-your-site/">[Link]</a></p>
+
+<br><br>
+
+<!-- 12 --><h3 id="12">(12) all headings</h3>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<br>
+
+<!-- 13 --><h3 id="13">(13) What's a paragraph tag and what is it used for? (add example)</h3>
+
+<p>The HTML <code>&lt;p&gt;</code> element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</p>
+
+<br><br>
+
+<!-- 14 {REVIEW} --><h3 id="14">(14) Research and explain the difference between stuffing text in one paragraph or dividing it into multiple tags</h3>
+
+<p>There are other (non-)block elements that can be used to format text in a variety of ways.</p>
+
+<br><br>
+
+<!-- 15 --><h3 id="15">(15) Reproduce the example by using headers and paragraphs</h3>
+
+<div class="tableBorder">
+  <h2>Mijn eerste website</h2>
+  <h3>Mijn eerste sub-kop</h3>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eaque perspiciatis corrupti odio rerum vitae harum quod blanditiis, ex doloribus laudantium fuga reiciendis optio aliquam culpa hic laboriosam libero possimus?</p>
+
+  <h3>Mijn tweede sub-kop</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati, ratione fugiat quas exercitationem deserunt animi incidunt tenetur tempora optio laboriosam eveniet repellat cupiditate voluptate, deleniti et? Animi, sit accusamus?</p>
+</div>
+
+<br>
+
+<!-- 16 --><h3 id="16">(16) Add a horizontal rule</h3>
+<hr>
+
+<br><br>
+
+<!-- 17 --><h3 id="17">(17) Add a link tag and reproduce the result in the footer</h3>
+
+<footer>
+  <h4>Footer</h4>
+  <p>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl" target="_blank">TechGrounds Academy</a></p>
+</footer>
+
+<br>
+
+<!-- 18 --><h3 id="18">(18) Research what 4 attributes a link tag can have, explain what they do and add them to the website.</h3>
+
+<p> The main attributes for the <code> <a> </code> tag are href, target, type, media and download. </p>
+
+  <ul>
+    <li><b>href</b>: Specifies the URL of the page the link goes to.</li>
+    <li><b>target</b>: Specifies where to open the linked document.</li>
+    <li><b>type</b>: Specifies the media type of the linked document.</li>
+    <li><b>media</b>: 	Specifies what media/device the linked document is optimized for.</li>
+    <li><b>download</b>: Specifies that the target will be downloaded when a user clicks on the hyperlink.</li>
+  </ul>
+
+<br>
+
+<!-- Image, Audio & Video -->
+
+<!-- 1 --><p>(1) Explain absolute and relative path.</p>
+
+<!-- 2 --><p>(2) Explain which other image formats exist beyond jpg.</p>
+
+<!-- 3 --><p>(3) Research which browsers exist and make a list...</p>
+
+<!-- 4 --><p>(4) Place an image</p>
+
+<!-- 5 --><p>(5) What's the <i>alt</i> atribute. Why do we use it?</p>
+
+<!-- 6 --><p>(6) Load an audio file (explosion.mp3) on the page. (put audio on repeat)</p>
+
+<!-- 7 --><p>(7) Play a sound file with the <source> tag. Explain it's advantages...</p>
+
+<!-- 8 --><p>(8) Add a video file to the page. (size it)</p>
+
+<!-- 9 --><p>(9) Reproduce the lists...</p>
+
+<ol>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ol>
+
+<ol>
+  <li>item 1</li>
+  <li>item 1</li>
+  <ol>
+    <li>sub item 1</li>
+    <li>sub item 2</li>
+  </ol>
+  <li>item 3</li>
+</ol>
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <ul>
+    <li>sub item 1</li>
+    <li>sub item 2</li>
+  </ul>
+  <li>item 3</li>
+</ul>
+
+<ul>
+  <li>
+    <li>item 1</li>
+    <li>item 2</li>
+  </li>
+  <ol>
+    <li>sub item 1</li>
+    <li>sub item 2</li>
+  </ol>
+  <li>item 3</li>
+</ul>
+
+<!-- 10 {REVIEW} --><p>(10) Build a navigation bar according to the instructions</p>
+<!-- 11 {REVIEW} --><p>(11) Create a header for each part and a piece of text. Link from navbar to headings!</p>
+
+<!-- OPDRACHTEN HTML FORMS -->
+
+<br> <h1>HTML FORMS</h1>
+
+<!-- 01 --><p>(01) Make an html form where a user can enter their given and last names.</p>
+<table class="tableBackground" style="padding: 4px; text-align: right; color: rgb(90, 90, 90);">
+  <tr>
+    <td>achternaam:</td>
+    <td>
+      <input type="text" name="achternaam" id="achternaam" value="achternaam"></td>
+  </tr>
+  <tr>
+    <td>voornaam:</td>
+    <td><input type="text" name="Voornaam" id="Voornaam" value="voornaam"></td>
+  </tr>
+</table>
+
+<br><br>
+
+<!-- 02 --><p>(02) Use all the input fields... </p>
+
+<input type="button" value="Button"> &nbsp; <span>||</span> &nbsp; 
+<input type="checkbox" id="chkbx"><label for="chkbx"> Checkbox</label> &nbsp; <span>||</span> &nbsp;
+<input type="color"> <br>
+
+<input type="date"> &nbsp; <span>||</span> &nbsp; <input type="datetime-local"> <br>
+<input type="email" id="eml" value="email@techgrounds.nl"> &nbsp; <span>||</span> &nbsp; <input type="file"> <br>
+
+<input type="hidden"> <br>
+
+<input type="image" src="camera.png" alt="Camera" style="float:left; margin-left: 10px; margin-top:18px; margin-right:8px;" width="20" height="20"> <br>
+
+<label for="start">Start month:</label>
+<input type="month" id="start" name="start" min="2018-03" value="2018-05"> <br><br>
+
+<label for="tentacles">Number of tentacles (10-100):</label>
+<input type="number" id="tentacles" name="tentacles" min="10" max="100"> <br>
+
+<label for="pass">Password (8 characters minimum):</label>
+<input type="password" id="pass" name="password" minlength="8" required> <br>
+
+<input type="radio" id="dewey" name="drone" value="dewey">
+<label for="dewey">Dewey</label> <br>
+
+<input type="range" id="volume" name="volume" min="0" max="11">
+  <label for="volume">Volume</label> <br>
+
+<input type="reset"> <br>
+
+<label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q" aria-label="Search through site content"> <br>
+
+<input type="submit"> <br>
+
+<label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+
+<small>Format: 123-456-7890</small> <br><br>
+
+<label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="appt">Choose a time for your meeting:</label>
+
+  <input type="time" id="appt" name="appt"
+         min="09:00" max="18:00" required>
+  
+  <small>Office hours are 9am to 6pm</small> <br><br>
+
+  <label for="url">Enter an https:// URL:</label>
+
+  <input type="url" name="url" id="url"
+         placeholder="https://example.com"
+         pattern="https://.*" size="30"
+         required> <br><br>
+
+  <label for="week">Choose a week in May or June:</label>
+
+  <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+
+<br><br><br>
+
+<!-- 03 --><p>(03) Make an email input field with submit button </p>
+
+<div class="tableBackground" style="width: 360px; padding: 8px;">
+  <fieldset>
+    <legend>E-mail</legend>
+    <input type="email" id="email" value="example@techgrounds.com">
+    <input type="button" id="submitEmail" value= "submit">
+  </fieldset>
+</div>
+
+<br><br>
+
+<!-- 04 --><p>(04) Recreate the example form. </p>
+
+<form style="width: 360px;">
+  <fieldset>
+    <table class="tableBorder tableBackground">
+      <legend>Persoons gegevens</legend>
+      <tbody>
+        <tr>
+          <td>Achternaam:</td>
+        <td>
+          <input type="text" name="achternaam" id="achternaam2" value="achternaam"></td>
+        </tr>
+        <tr>
+          <td>Voornaam:</td>
+          <td><input type="text" name="Voornaam" id="voornaam2" value="voornaam"></td>
+        </tr>
+        <tr>
+          <td>Geboortedatum:</td>
+          <td><input type="text" name="Geboortedatum" id="geboortedatum" value="mm/dd/yyyy"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <span style="padding: 10px;">
+              <label for="man"> Man:</label>
+              <input type="checkbox" name="Man" id="man">
+            </span>
+            <span style="padding: 10px;">
+              <label for="vrouw"> Vrouw:</label>
+              <input type="checkbox" name="Vrouw" id="vrouw">
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Postcode:</td>
+          <td><input type="text" name="Postcode" id="postcode" value="postcode"></td>
+        </tr>
+        <tr>
+          <td>Adres:</td>
+          <td><input type="text" name="Adres" id="adres" value="adres"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </fieldset>
+</form>
+
+<br><br>
+
+<!-- 05 --><p>(05) Make a dropdown list </p>
+
+<select name="choice">
+  <option value="first">First Value</option>
+  <option value="second" selected>Second Value</option>
+  <option value="third">Third Value</option>
+  <option value="third">Fourth Value</option>
+  <option value="third">Fifth Value</option>
+</select>
+
+<br><br><br>
+
+<!-- 06 {REVIEW} --><p>(06) Name 3 situations in which you can use dropdown lists, radio buttons and checkboxes.</p>
+<p><b>Dropdown lists:</b> can be used to give the user a choice between a set number of options. For example: to pick a title or country.</p>
+<p><b>Radio Buttons:</b> are typically used to ask the user to indicate their preference. For example which shipping adresses the user wants their product to ship to.</p>
+<p><b>checkboxes:</b> might be used to allow the user to select multiple options. For example the choice of toppings on a pizza.</p>
+
+<br>
+
+<!-- 07 --><p>(07) Create a form to allow gym members to make a reservation.</p>
+
+<form style="width: 400px;">
+  <fieldset>
+    <legend>Gym Reservation</legend>
+    <table class="tableBorder tableBackground">
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td style="text-align: left;"><input type="text" name="Name" id="gymName" value="name..."></td>
+        </tr>
+        <tr>
+          <td>Are you a member?</td>
+          <td style="text-align: left;">
+            <select name="gymChoice">
+              <option value="blank" selected></option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td style="text-align: left;"><input type="text" name="Name" id="gymName" value="name..."></td>
+        </tr>
+        <tr>
+          <td>Reservation type:</td>
+          <td style="text-align: left;">
+            <select name="gymReservationType">
+              <option value="blank" selected></option>
+              <option value="single">Single session</option>
+              <option value="trainer">Personal Trainer session</option>
+              <option value="nutrition">Nutrition advice</option>
+              <option value="group">Group lesson</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Date &AMP; Time:</td>
+          <td style="text-align: left;"><input type="datetime-local"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><i>I agree to the terms</i> <input type="checkbox" id="chkbx"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" style="float: right;" value="Book session"></td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+</form>
+
+<br><br>
+
+<!-- 08 --><p>(08) Create a form for a library to receive book reservations.</p>
+
+<form style="width: 254px;">
+  <fieldset>
+    <table class="tableBorder tableBackground">
+      <legend>Reserve a book</legend>
+      <tbody>
+        <tr>
+          <td>Name:<br>
+          <input type="text" name="Name" id="libraryName" value="name..."></td>
+        </tr>
+        <tr>
+          <td>Surname:<br>
+          <input type="text" name="Surname" id="librarySurname" value="surname..."></td>
+        </tr>
+        <tr>
+          <td>Date of birth:<br>
+          <input type="text" name="DateOfBirth" id="libraryDOB" value="mm/dd/yyyy"></td>
+        </tr>
+        <tr>
+          <td>Name of Book:<br>
+          <input type="text" name="BookName" id="libraryBookName" value="name of book..."></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">Quantity:<br>
+            <input type="number" id="Quantity" name="quantity" min="1" max="5"><br>
+            <i style="color: rgb(129, 129, 129); text-shadow:2px; font-size: small;">(min. 1 max. 5)</i>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td style="text-align: left;">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </fieldset>
+</form>
+
+<br><br>
+
+<!-- 09 --><p>(09) Build a form based on what I've learned. </p>
+
+<!-- use:
+  
+radiobutton
+checkbox
+reset
+submit
+date
+search
+time
+email
+
+-->
+
+<form style="width: 312px;">
+  <fieldset>
+    <table class="tableBorder tableBackground" style="text-align: center;">
+      <legend>Restaurant Reservation</legend>
+      <tbody>
+        <tr>
+          <td>Name & Surname<br>
+          <input type="text" name="Name" id="libraryName" value="foo bar..."></td>
+        </tr>
+        <tr>
+          <td>
+            E-mail<br>
+            <input type="email" id="email" value="hungry@home.now"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Location<br>
+            <select name="choice">
+              <option value="empty" selected>&nbsp;</option>
+              <option value="atrium">Heavenly Atrium</option>
+              <option value="gardgen">Green Gardens</option>
+              <option value="terras">Vox Terras</option>
+              <option value="grand fireplace">Grand Fireplace</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Date &AMP; Time<br>
+          <input type="datetime-local"></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;"> <br> Number of guests: <input type="number" id="Quantity" name="quantity" min="1" max="8"><br>
+            <i style="color: rgb(129, 129, 129); text-shadow:2px; font-size: small;">(Please call us for reservations of 8+ people)</i><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <p>Would you like a visit from our sommelier?</p>
+            <span style="padding: 10px;">
+              <input type="radio" id="yes" name="yes" value="yes">
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="yes" value="no">
+              <label for="no">No</label> <br>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td style="text-align: center;">
+            <br><i>Subscribe to mailing list</i> <input type="checkbox" id="chkbx">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <br><input type="submit" value="Submit">
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </fieldset>
+</form>
+
+<br><br>
+
+<!-- 10 --><p>(10) Define the following table elements. </p>
+
+  <table>
+    <tr><td>&lt; table &gt;</td><td> . </td></tr>
+    <tr><td>&lt; thead &gt;</td><td> . </td></tr>
+    <tr><td>&lt; tbody &gt;</td><td> . </td></tr>
+    <tr><td>&lt; tfoot &gt;</td><td> . </td></tr>
+    <tr><td>&lt; th &gt;</td><td> . </td></tr>
+    <tr><td>&lt; tr &gt;</td><td> . </td></tr>
+    <tr><td>&lt; td &gt;</td><td> . </td></tr>
+  </table>
+
+<br><br><br>
+
+<!-- 11 --><p>(11) Create a table based on instructions. </p>
+<table class="tableBackground" style="padding: 12px; text-align: center;">
+  <thead>
+    <tr>
+      <th>Voornaam</th>
+      <th>Achternaam</th>
+      <th>Leeftijd</th>
+      <th>Telefoon nr.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>41</td>
+      <td>+31 12345678</td>
+    </tr>
+    <tr>
+      <td>Steven</td>
+      <td>Smith</td>
+      <td>32</td>
+      <td>+31 12345678</td>
+    </tr>
+    <tr>
+      <td>Alexander</td>
+      <td>Beave</td>
+      <td>16</td>
+      <td>+31 12345678</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<!-- 12 --><p>(12) Recreate example calendar using the table element.</p>
+<table class="tableBackground" style="padding: 12px;">
+  <thead>
+    <tr>
+      <th>MA</th>
+      <th>DI</th>
+      <th>WO</th>
+      <th>DO</th>
+      <th>VR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Afspraak met tandarts</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Sporten</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Huiswerk maken</td>
+      <td>Werken</td>
+      <td>Werken</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Afspraak met tandarts</td>
+      <td></td>
+      <td></td>
+      <td>Werken</td>
+      <td>Bij vrienden</td>
+  </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<!-- 13 --><p>(13) Recreate: </p>
+<table>
+  <caption>Colspan &amp; Rowspan table</caption>
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: right; padding-right: 3%;">Sport</th>
+      <th>Aantal recreanten</th>
+      <th>Aantal competitie spelers</th>
+      <th>Totale deelnemers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Racket sport</td>
+      <td>Badminton</td>
+      <td>10</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tafeltennis</td>
+      <td>59</td>
+      <td>30</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tennis</td>
+      <td>159</td>
+      <td>130</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>Ball sport</td>
+      <td>Voetbal</td>
+      <td>88</td>
+      <td>40</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Basketbal</td>
+      <td>60</td>
+      <td>40</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Volleybal</td>
+      <td>35</td>
+      <td>20</td>
+      <td>55</td>
+    </tr>
+  </tbody>
+</table>
+<!-- 14 --><p>(14) Create own table using all the learned elements... <i style="color: red;">(CSS not allowed)</i> </p>
+  
+</body>
+</html>
+

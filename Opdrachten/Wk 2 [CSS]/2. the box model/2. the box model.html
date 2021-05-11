@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Box Model</title>
+
+  <!-- Preconnect to Google Fonts (for speed) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- include styles.css -->
+  <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+  
+  <h1><span style="font-size: 50px; color: gray; line-height: 20px !important;">CSS:</span> <br> The <br> Box <br> Model</h1>
+
+  <div class="container">
+
+      <br>
+    
+    <!-- Question 1 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht1">Opdracht 1</h2>
+      <p class="vraag">Wat zijn de eigenschappen van block boxes en inline boxes?</p>
+      <p class="antwoord">In CSS we broadly have two types of boxes — block boxes and inline boxes. These characteristics refer to how the box behaves in terms of page flow, and in relation to other boxes on the page:</p>
+      <p>If a box is defined as a block, it will behave in the following ways:</p>
+      <ul>
+        <li>The box will break onto a new line.</li>
+        <li>The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will become as wide as its container, filling up 100% of the space available.</li>
+        <li>The width and height properties are respected.</li>
+        <li>Padding, margin and border will cause other elements to be pushed away from the box</li>
+      </ul>
+      <p>Unless we decide to change the display type to inline, elements such as headings (e.g. &lt;h1&gt;) and &lt;p&gt; all use block as their outer display type by default.</p>
+      <p>If a box has an outer display type of inline, then:</p>
+      <ul>
+        <li>The box will not break onto a new line.</li>
+        <li>The width and height properties will not apply.</li>
+        <li>Vertical padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.</li>
+        <li>Horizontal padding, margins, and borders will apply and will cause other inline boxes to move away from the box.</li>
+      </ul>
+      <p>The &lt;a&gt; element, used for links, &lt;span&gt;, &lt;em&gt; and &lt;strong&gt; are all examples of elements that will display inline by default.</p>
+      <p>The type of box applied to an element is defined by display property values such as block and inline, and relates to the outer value of display.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"> CSS type selectors (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht2">Opdracht 2</h2>
+      <p class="vraag">Wat zijn de eigenschappen van block boxes en inline boxes?</p>
+      <span style="display: block; background-color: lightgreen;">
+        <p style="background-color: green; border: 2px solid black;">Dit is een block box en neemt de hele breedte in waardoor de</p>
+        <p style="background-color: green; border: 2px solid black;">volgende box op de volgende regel zit. In dit blok zit <span style="background-color: white; border: 2px solid black;">inline tekst</span> in wat dus niet op de volgende regel komt te <span style="background-color: white; border: 2px solid black;">staan</span>.</p>
+      </span>
+      <hr>
+      <p>Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes"> Block and inline boxes (MDN Web Docs) </a></p>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht3">Opdracht 3</h2>
+      <p class="vraag">Wat gebeurt er als je een width en een height toevoegt aan de span tag ( &lt;span &gt; ) van vorige opdracht?</p>
+      <p class="antwoord">Depends. Spans are inline elements by default and as such will ignore width and height values. However when set to block (like the outer span), they become block elements and which do accept witdh and height values.</p>
+      <hr>
+      <p>Source: <a href="https://stackoverflow.com/a/2015698/4401638"> Block vs. inline elements (Stackoverflow answer) </a></p>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht4">Opdracht 4</h2>
+      <p class="vraag">Hieronder zie je een box-model. Leg uit wat de volgende termen betekenen: content, padding, margin en border.</p>
+      <img src="img/opdracht4.gif">
+      <p class="antwoord">In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+      <ul>
+        <li><b>Content:</b> The content of the box, where text and other conent are displayed</li>
+        <li><b>Padding:</b> Clears an area around the content. The padding is transparent</li>
+        <li><b>Margin:</b> A border that goes around the padding and content</li>
+        <li><b>Border:</b> Clears an area outside the border. The margin is transparent</li>
+      </ul>
+      <hr>
+      <p>Source: <a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS box model (w3schools)</a></p>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht5">Opdracht 5</h2>
+      <p class="vraag">Als je ruimte wilt maken tussen de border en content, welke css property gebruik je dan? Maak een voorbeeld in je antwoord.</p>
+      <p class="antwoord">To achieve that you would use padding. For example:</p>
+      <p><span class="code"> h2 { padding: 6x; }</span></p>
+      <p>This would apply 6 pixels of padding to all &lt;h2&gt; block elements.</p>
+      <hr>
+      <p>Source: <a href="https://www.w3schools.com/css/css_padding.asp">CSS padding (w3schools)</a></p>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht6">Opdracht 6</h2>
+      <p class="vraag">Als je ruimte wilt maken tussen de border en buiten de box, welke css property gebruik je dan? Maak een voorbeeld in je antwoord.</p>
+      <p class="antwoord">Margins are used to create space around elements, outside of any defined borders.</p>
+      <p><span class="code"> div { margin: 20x 20px 20px 20px; }</span></p>
+      <p>This applies 20 pixels of margin to the top, right, bottom and left of all &lt;div&gt; elements.</p>
+      <hr>
+      <p>Source: <a href="https://www.w3schools.com/css/css_margin.asp">CSS margin (w3schools)</a></p>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht7">Opdracht 7</h2>
+      <p class="vraag">Maak nu een blok met width: 100px, height: 100px, margin: 5px, padding 5px en border-width: 5px. Zie hieronder:</p>
+      <img src="img/opdracht7.gif">
+      <ol>
+        <li>Hoe breed is de box?</li>
+        <li>Hoe hoog is de box?</li>
+        <li>Wat merk je op met width en height?</li>
+      </ol>
+      <br>
+      <p class="antwoord">The box below has a total width of 120 pixels and a height of 120 pixels. It's noteworthy that margin doesn't affect the actual size of the element.</p>
+      <div style="position: relative; left: 60px; width: 100px; height: 100px; margin: 5px; padding: 5px; border: 5px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+      <br>
+      <hr>
+      <p>Source: <a href="https://www.codecademy.com/articles/f1-devtools-box-model">Chrome Devtools box model (Codecademy)</a></p>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht8">Opdracht 8</h2>
+      <p class="vraag">Welke CSS property kun je gebruiken om ervoor te zorgen dat de waarde van width en height de totale breedte en hoogte is van het blok van de voorgaande opdracht?</p>
+      <p class="antwoord">To stretch a div block element to the size of a parent element one could use max-width property in combination with an absolute length (px, pt etc) or relative length (%, em, rem) unit. /or the % unit set too 100. The % unit is a relative unit. The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. Relative length units scale better between different rendering mediums (i.e. bigger and smaller screens).</p>
+      <br>
+      <hr>
+      <p>Source: <a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp">CSS max-width (w3schools)</a>, <a href="https://www.w3schools.com/cssref/css_units.asp">CSS units (w3schools)</a></p>
+      
+    </div>
+
+    <!-- Question 9 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht9">Opdracht 9</h2>
+      <p class="vraag">Maak een aantal voorbeelden van boxen en maak gebruik van steeds verschillende margin, padding en border properties.</p>
+      
+      <div style="display: flex; flex-wrap: wrap;">
+        <div style="position: relative; width: 140px; height: 90px; margin: 22px; padding: 2px; border: 8px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+        <div style="position: relative; width: 106px; height: 106px; margin: 5px; padding: 20px; border: 1px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+        <div style="position: relative; width: 80px; height: 80px; margin: 12px; padding: 12px; border: 16px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+        <div style="position: relative; width: 80px; height: 60px; margin: 40px; padding: 2px; border: 30px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+        <div style="position: relative; width: 160px; height: 70px; margin: 2px; padding: 6px; border: 4px solid black; background-color: lightgray;"><p style="text-align: center; font-weight: bolder;">this is the <br> content</p></div>
+      </div>
+
+      <br>
+      <hr>
+      <p>Source: <a href="https://www.w3schools.com/css/css_padding.asp">CSS padding (w3schools)</a>, <a href="https://www.w3schools.com/css/css_margin.asp">CSS margins (w3schools)</a>,<br> <a href="https://www.w3schools.com/css/css_border.asp">CSS borders (w3schools)</a></p>
+
+    </div>
+
+    <br>
+  
+  </div>
+
+</body>
+</html>

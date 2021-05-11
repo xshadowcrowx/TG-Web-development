@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Transition</title>
+
+  <style>
+
+    /* A quick competition with Elly. Game on! */
+
+    .container {
+      width: 400px;
+      height: 600px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .box {
+      /*width: 150px;
+      height: 150px;*/
+      padding: 40px;
+      background: #b94530;
+
+      /*
+      -webkit-transition: background-color 2s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
+      */
+    }
+
+    .box:hover {
+      background-color: green;
+      cursor: pointer;
+      font-size: larger;
+    }
+
+    .box > h1 , p {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box">
+      <H1>Oh my DIV!</H1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dicta excepturi. Optio corporis veniam necessitatibus debitis, nesciunt asperiores, et, ea modi enim distinctio dolores culpa commodi delectus labore suscipit rem?</p>
+    </div>
+  </div>
+
+</body>
+</html>

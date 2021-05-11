@@ -1,5 +1,5 @@
 
-# HTML week 1: intro vragen
+# HTML wk 1: intro vragen
 
 1.	Wat is het verschil tussen het internet en het world wide web?
 2.	Wat is het verschil tussen HTML, CSS en JavaScript?

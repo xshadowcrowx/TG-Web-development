@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opdracht 6</title>
+
+  <style>
+    .code {
+      background-color: lightgrey;
+      font-weight: bold;
+      padding: 8px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h2>Basic Selectors:</h2>
+
+  <h3>Type selector</h3>
+  <p><span class="code"> p { font-size: 20px; } </span></p>
+  <p class="explanation">Selects all elements that have the given node name. In this case it resizes all &lt;p&gt; elements to 20px.</p>
+
+  <h3>Class selector</h3>
+  <p><span class="code"> .myLink { text-decoration: none; } </span></p>
+  <p class="explanation">Selects all elements that have the given class attribute. I use this to remove text decoration (underline) from specific &lt;a&gt; tags.</p>
+
+  <br><h2>Combinators:</h2>
+
+  <h3>Child selectors</h3>
+  <p><span class="code"> div > p { color: red; } </span></p>
+  <p class="explanation">The child selector selects all elements that are the children of a specified element. In my example it allows one to apply styles to paragraphs that are children of divs. </p>
+
+  <h3>Adjacent selectors</h3>
+  <p><span class="code"> h2 + p { color: green; } </span></p>
+  <p class="explanation">The adjacent sibling selector is used to select an element that is directly after another specific element.<br>
+    Sibling elements must have the same parent element, and "adjacent" means "immediately following". Similar to child selectors, though it allows one to apply styles to adjacent sibling elements.</p>
+
+  <h3>General sibling selector</h3>
+  <p><span class="code"> h2 ~ p { color: blue; } </span></p>
+  <p class="explanation">The general sibling selector selects all elements that are siblings of a specified element. Similar to the adjecent sibling selector, but works on all siblings</p>
+
+</body>
+</html>
