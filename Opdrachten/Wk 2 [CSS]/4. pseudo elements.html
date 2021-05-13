@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+
+  <!-- Preconnect to Google Fonts (for speed) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- include styles.css -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      /*letter-spacing: 1px;*/
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 0px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <h1 style="font-size: 80px; line-height: 70px;"><span style="font-size: 50px; color: gray; line-height: 20px !important;">CSS:</span> <br> Pseudo <br> elements</h1>
+
+  <div class="container">
+
+      <br>
+    
+    <!-- Question 1 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht1">Opdracht 1</h2>
+      <p class="vraag">Kun je enkele voorbeelden geven van pseudo-elementen (minimaal 4)? Beschrijf met je eigen woorden wat deze pseudo-elementen inhouden.</p>
+      <hr>
+      <p class="antwoord">A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s)<br> <span style="line-height: 40px;">For example:</span></p>
+      <p><span class="code" style="line-height: 40px;">::first-letter</span> is a pseudo-element which selects the first letter in the first line of a block-level element (such as a paragraph &lt;p&gt;), if that letter is not preceded by any other content (such as images or inline tables) on its line.</p>
+      <p><span class="code" style="line-height: 40px;">::first-line</span> is a pseudo-element used to select the first formatted line in a block-level element (such as a paragraph &lt;p&gt;;).</p>
+      <p><span class="code" style="line-height: 40px;">::before</span> is a generated content element that represents a styleable abstract first child of the respective element.</p>
+      <p><span class="code" style="line-height: 40px;">::after</span> is a generated content element that represents a styleable abstract last child of the respective element.</p>
+      <p><span class="code" style="line-height: 40px;">::placeholder</span> is a CSS pseudo-element that represents placeholder text in an input field—text that represents the input and provides a hint to the user on how to fill out the form.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"> CSS Pseudo-classes and pseudo-elements (MDN Web Docs)</a>,<br> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> CSS Pseudo-elements (w3schools)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht2">Opdracht 2</h2>
+      <p class="vraag">Er zijn 14 verschillende pseudo elementen. Je hebt in de voorgaande opdracht reeds 4 kunnen benoemen. Kun je de andere 10 ook benoemen en aangeven wat ze precies doen?</p>
+      <p class="antwoord">There are also CSS Pseudo-classes. These start with a single colon ":". A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#what_is_a_pseudo-class"> [more info]</a></p>
+      <p><span class="code" style="line-height: 40px;">:hover</span> is a pseudo-class used to select and style an element when it is being hovered by the user.</p>
+      <p><span class="code" style="line-height: 40px;">:active</span> is a CSS pseudo-class. It specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state.</p>
+      <p><span class="code" style="line-height: 40px;">:focus</span> is a pseudo-class used to select and style elements—usually links and form elements—that have been focused by the user, either by “tabbing” using the keyboard or by clicking.</p> 
+      <p><span class="code" style="line-height: 40px;">:visited</span> is a pseudo-class used to select and style visited links in a page.</p>
+
+      <p><span class="code" style="line-height: 40px;">:disabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are disabled.</p>
+      <p><span class="code" style="line-height: 40px;">:checked</span> Radio and Checkbox elements can be toggled by the user. Some menu items are “checked” when the user selects them. When such elements are toggled “on” the :checked pseudo-class applies.</p>
+      <p><span class="code" style="line-height: 40px;">:enabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are enabled.</p> 
+      <p><span class="code" style="line-height: 40px;">:disabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are disabled.</p>
+
+      <p><span class="code" style="line-height: 40px;">:invalid</span> is a CSS pseudo-class used to select and style form &lt;input&gt; elements whose value is invalid according to its type specified in the type attribute.</p>
+      <p><span class="code" style="line-height: 40px;">:valid</span> is a CSS pseudo-class used to select and style form &lt;input&gt; elements whose values validate according to their type specified in the type attribute.</p>
+      
+      <p><span class="code" style="line-height: 40px;">:nth-child()</span> is a CSS pseudo-class selector that allows you to select elements based on their index (source order) inside their container.</p>
+      <p><span class="code" style="line-height: 40px;">:nth-last-child()</span> is a CSS pseudo-class selector that allows you to select elements based on their index (source order) inside their container, starting from the last element upwards.</p>
+      <p><span class="code" style="line-height: 40px;">:nth-of-type()</span> is a CSS pseudo-class selector that allows you to select elements of the same type based on their index (source order) inside their container.</p>
+      <p><span class="code" style="line-height: 40px;">:only-of-type</span> is a CSS pseudo-selector which matches an element if its parent has no other children of the same type.</p>
+      
+      <hr>
+      <p class="note"><b>Note:</b> I was unable to find 14 pseudo elements, so I decided to use pseudo-classes for this excercise.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://tympanus.net/codrops/css_reference/#section_css-pseudo-class"> CSS Reference Pseudo-class (codrops) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht3">Opdracht 3</h2>
+      <p class="vraag">Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
+      <p class="antwoord">.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning"> CSS Relative positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht4">Opdracht 4</h2>
+      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+      <img src="img/opdracht4.gif" alt="afbeelding opdracht4">
+      <p class="antwoord">.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning"> CSS Relative positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht5">Opdracht 5</h2>
+      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+      <img src="img/opdracht5.png" alt="afbeelding opdracht5">
+      
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#absolute_positioning"> CSS Absolute positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht6">Opdracht 6</h2>
+      <p class="vraag">Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken? Zoek een afbeelding op internet.</p>
+      <img src="img/opdracht6.gif" alt="afbeelding opdracht6>
+      
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"> CSS type selectors (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht7">Opdracht 7</h2>
+      <p class="vraag">Hieronder vind je wederom een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+      <img src="img/opdracht7.gif" alt="afbeelding opdracht7>
+      <hr>
+      <p class="sources">Source: <a href="https://dzone.com/articles/css-position-relative-vs-position-absolute"> CSS position relative vs position absolute (Web Dev Zone) </a></p>
+      <br>
+    </div>
+
+  </div>
+
+</body>
+</html>

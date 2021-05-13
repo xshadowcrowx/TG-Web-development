@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display &amp; positioning</title>
+
+  <!-- Preconnect to Google Fonts (for speed) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- include styles.css -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      /*letter-spacing: 1px;*/
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 0px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <h1 style="font-size: 80px; line-height: 70px;"><span style="font-size: 50px; color: gray; line-height: 20px !important;">CSS:</span> <br> Display <br> and <br> Positioning</h1>
+
+  <div class="container">
+
+      <br>
+    
+    <!-- Question 1 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht1">Opdracht 1</h2>
+      <p class="vraag">Welke position values zijn er? Leg voor elke position values uit wat het doet. Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.</p>
+      <p class="antwoord">Positioning allows you to take elements out of the normal document layout flow, and make them behave differently; for example sitting on top of one another, or always remaining in the same place inside the browser viewport.</p>
+      <p>There are a number of different types of positioning that you can put into effect on HTML elements. To make a specific type of positioning active on an element, we use the position property.</p>
+      <p><b>Static:</b> Static positioning is the default that every element gets — it just means "put the element into its normal position in the document layout flow — nothing special to see here."</p>
+      <p><b>Relative:</b> Relative positioning is the first position type we'll take a look at. This is very similar to static positioning, except that once the positioned element has taken its place in the normal layout flow, you can then modify its final position, including making it overlap other elements on the page.</p>
+      <p><b>Absolute:</b> An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else. This is very useful: it means that we can create isolated UI features that don't interfere with the layout of other elements on the page.  For example, popup information boxes and control menus; rollover panels; UI features that can be dragged and dropped anywhere on the page; and so on...</p>
+      <ul>
+        <li><b>Positioning contexts:</b> If no ancestor elements have their position property explicitly defined, then by default all ancestor elements will have a static position. The result of this is, the absolutely positioned element will be contained in the <b>initial containing block.</b></li><br>
+        <li><b>Introducing z-index:</b> To change the stacking order of absolutely positioned elements you can use the z-index property.</li>
+      </ul>
+      <p><b>Fixed:</b> This works in exactly the same way as absolute positioning, with one key difference: whereas absolute positioning fixes an element in place relative to its nearest positioned ancestor (the initial containing block if there isn't one), fixed positioning usually fixes an element in place relative to the visible portion of the viewport, except if one of its ancestors is a fixed containing block due to its transform property being different from none. This means that you can create useful UI items that are fixed in place, like persisting navigation menus that are always visible no matter how much the page scrolls.</p>
+      <p><b>Sticky:</b> There is another position value available called position: sticky, which is somewhat newer than the others. This is basically a hybrid between relative and fixed position, which allows a positioned element to act like it is relatively positioned until it is scrolled to a certain threshold point (e.g. 10px from the top of the viewport), after which it becomes fixed. This can be used to for example cause a navigation bar to scroll with the page until a certain point, and then stick to the top of the page.</p>
+      <hr>
+      <p><b>top, bottom, left, and right</b> are used alongside position to specify exactly where to move the positioned element to. To try this out, add the following declarations to the .positioned rule in your CSS:</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning"> CSS Positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht2">Opdracht 2</h2>
+      <p class="vraag">Zie de onderstaande HTML code.</p>
+      <ul style="list-style-type: none;">
+        <li>&lt;h1&gt;Dit is een titel&lt;/h1&gt;</li>
+        <li>&lt;p&gt;Dit is een paragraaf.&lt;/p&gt;</li>
+        <li>&lt;p&gt;Dit is nog een paragraaf.&lt;/p&gt;</li>
+      </ul>
+      <p class="vraag">Hoe zorg je er voor dat het &lt;h1&gt; element altijd 50px van de top en 50px van de rechterkant van het scherm zichtbaar is. Maak het &lt;h1&gt; element rood door een RGB kleurcodering toe te passen.</p>
+      <iframe src="3.opdracht2.html" style="height:240px;" title="opdracht2"></iframe>
+      <p><a href="3.opdracht2.html">[link]</a></p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#absolute_positioning"> CSS Absolute positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht3">Opdracht 3</h2>
+      <p class="vraag">Zorg er nu voor dat het &lt;h1&gt; element uit de voorgaande opdracht 20px links en 30px naar onder wordt geplaatst, relatief t.o.v. diens normale positie.</p>
+      <iframe src="3.opdracht3.html" style="height:240px;" title="opdracht3" style="overflow-x: hidden;"></iframe>
+      <p><a href="3.opdracht3.html">[link]</a></p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning"> CSS Relative positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht4">Opdracht 4</h2>
+      <p class="vraag">Zorg er nu voor dat het &lt;h1&gt; element uit opdracht 2 50px links en 100px van de top wordt geplaatst relatief t.o.v. de HTML pagina.</p>
+      <iframe src="3.opdracht4.html" style="height:240px;" title="opdracht4" style="overflow-x: hidden;"></iframe>
+      <p><a href="3.opdracht4.html">[link]</a></p>
+      
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#absolute_positioning"> CSS Absolute positioning (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht5">Opdracht 5</h2>
+      <img src="img/opdracht5.gif">
+      <p class="vraag">Positioneer het &lt;img&gt; element achter de tekst. Zie voorbeeld hierboven en gebruik onderstaande HTML code. Je mag zelf een eigen image gebruiken.</p>
+      <ul style="list-style-type: none;">
+        <li> &lt;h1&gt; Dit is een titel &lt;/h1&gt; </li>
+        <li> &lt;p&gt; Dit is een paragraaf. &lt;/p&gt; </li>
+        <li> &lt;p&gt; Dit is nog een paragraaf. &lt;/p&gt; </li>
+        <li> &lt;img src="./bg-image-colors.jpg"/&gt; </li>
+      </ul>
+      <iframe src="3.opdracht5.html" style="height:240px;" title="opdracht5" style="overflow-x: hidden;"></iframe>
+      <p><a href="3.opdracht5.html">[link]</a></p>
+      
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"> CSS type selectors (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht6">Opdracht 6</h2>
+      <p class="vraag">Maak het onderstaande na door gebruik te maken van relative position. De outer div block is 100px breed en 100px hoog. De inner div block is 50px breed en 50px hoog.</p>
+      <img src="img/opdracht6.gif">
+      <br>
+      <hr>
+      <div>
+        <div style="width: 100px; height: 100px; background-color: orange;">
+          <div style="width: 50px; height: 50px; background-color: green; position: relative; top: 25px; left: 25px;"></div>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://dzone.com/articles/css-position-relative-vs-position-absolute"> CSS position relative vs position absolute (Web Dev Zone) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht7">Opdracht 7</h2>
+      <p class="vraag">Zie de onderstaande image met tekst. Kun jij dit namaken? Gebruik zelf een foto van een zonnige bestemming. Gebruik position, maar je mag geen z-index toepassen.</p>
+      <img src="img/opdracht7.jpg">
+      <hr>
+      <div style="overflow-x: hidden;">
+        <figure style="height: 260px;">
+          <div style="max-width: 100%;">
+            <img src="img/vacation.jpg" alt="vacation" style="max-width: 100%;">
+            <figcaption style="text-align: center; color: lightgrey;"><em>image credits: Chen Mizrach Unsplash</em></figcaption>
+          </div>
+          <h3 style="position: relative; top: -240px; left: 120px;"><span style="color: purple;">Groeten uit </span> <span style="color: aliceblue;"> Bonaire!</span></h3>
+          <p style="font-family: 'Poppins', sans-serif; font-size: smaller; color: yellow; position: relative; top: -250px; left: 150px;">Kom je ook hier vakantie vieren?</p>
+        </figure>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://www.w3schools.com/howto/howto_css_image_text.asp"> How to position text over an image (w3schools)</a>,<br> <a href="https://www.w3schools.com/tags/tag_figure.asp"> HTML &lt;figure&gt; tag (w3schools)</a></p>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht8">Opdracht 8</h2>
+      <p class="vraag">Maak het onderstaande na. Je mag zelf een image zoeken en gebruiken.</p>
+      <img src="img/opdracht8.jpg">
+      <hr>
+      <div style="position: relative; text-align: center; max-width: 500px;">
+        <img src="img/koud.jpg" alt="echt koud hier" style="width: 100%;">
+        <div style="position: relative; top: -280px;">
+          <h3 style="position: absolute; left: 40px; top: -6px;">Bbbrrrrr...</h3>
+          <p style=" position: absolute; font-family: 'Poppins', sans-serif; font-size: smaller; color:darkgray; top: 36px; left: 40px; z-index: 5;">Super koud hier zeg!</p>
+          <div style="height:36px; max-width: 90%; top: 40px; left: -80px; background-color:yellow;"></div>
+          <div style="position: relative; height:24px; max-width: 260px; top: 11px; left: 20px; background-color:white; z-index: 0;"></div>
+          <div style="position: relative; height:36px; width: 40px; top: -58px; left: 490px; background-color:yellow; z-index: -1;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
