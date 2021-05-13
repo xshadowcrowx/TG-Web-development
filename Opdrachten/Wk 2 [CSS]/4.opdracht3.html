@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>opdracht3</title>
+
+  <style>
+
+    body {
+      /*font-size: 1.1em;*/
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    /* *********************************************************** */
+
+    a:link {
+      color: red;
+      background-color: cyan;
+    }
+
+    a:visited {
+      color: green;
+      background-color: orange;
+    }
+
+    a:hover {
+      color: hotpink;
+      text-decoration: none;
+      background-color: purple;
+    }
+
+    a:active {
+      color: blue;
+      text-decoration: underline;
+      background-color: yellow;
+    }
+
+    /* *********************************************************** */
+
+    a:focus {
+      background-color: black;
+      color: white;
+    }
+
+    /*hr {
+      margin: 50px 0;
+    }*/
+
+    .container {
+      margin: 40px auto;
+      max-width: 700px;
+    }
+
+    button {
+      padding: .3em 1.2em;
+      border: 1px solid black;
+      border-radius: 3px;
+      color: white;
+      background-color: #111;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 1em;
+    }
+
+    input[type=submit] {
+      padding: .3em 1.2em;
+      font-size: 1em;
+      width: 300px;
+      margin-bottom: 1em;
+    }
+
+    input[type=submit]:disabled,
+    button[type=submit]:disabled,
+    textarea {
+      background-color: #eee;
+      color: grey;
+      border: 1px solid grey;
+      cursor: not-allowed;
+    }
+
+    textarea:disabled {
+      resize: none;
+    }
+
+    input[type="checkbox"]:disabled + label,
+    input[type="radio"]:disabled + label {
+      text-decoration: line-through;
+      cursor: not-allowed;
+      color: grey;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>
+    <a href="#">Heading</a>
+  </h1>
+  <p>The above heading has a:link, a:visited, a:hover and a:active aplied.</p>
+  <hr>
+  <p>The form below has :focus, :disabled, </p>
+
+  <div class="container">
+    <form action="#">
+
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  
+      <input type="checkbox" id="checkbox-1" disabled><label for="checkbox-1">First Choice (disabled)</label>
+      <input type="checkbox" id="checkbox-2"><label for="checkbox-2">Second Choice</label>
+      <br>
+      <br>
+
+      <br>
+      <input type="radio" id="radio-1"><label for="radio-1">First Choice</label>
+      <input type="radio" id="radio-2" disabled><label for="radio-2">Second Choice (disabled)</label>
+      <br>
+
+      <br>
+      <textarea name="sth" id="sth" cols="30" rows="10" disabled>I'm disabled</textarea>
+      <br>
+      <br>
+
+      <input type="submit" value="Submit (<input>) Enabled">
+      <input type="submit" value="Submit (<input>) Disabled" disabled>
+      <br>
+      <br>
+
+      <button type="submit" disabled>Submit Button (disabled)</button>
+      <button type="submit">Submit Button (enabled)</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
