@@ -13,7 +13,9 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
-    /* *********************************************************** */
+
+
+    /* ****************** Link Pseudo Magic ********************** */
 
     a:link {
       color: red;
@@ -37,20 +39,37 @@
       background-color: yellow;
     }
 
-    /* *********************************************************** */
-
     a:focus {
       background-color: black;
       color: white;
     }
 
-    /*hr {
-      margin: 50px 0;
-    }*/
 
-    .container {
+
+    /* ***************** FORM STLYLING *************************** */
+
+    .fcontainer {
       margin: 40px auto;
       max-width: 700px;
+    }
+
+    input[type=text], textarea {
+      transition: all 0.30s ease-in-out;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid #DDDDDD;
+    }
+
+    input[type=submit] {
+      padding: .3em 1.2em;
+      font-size: 1em;
+      width: 300px;
+      margin-bottom: 1em;
     }
 
     button {
@@ -64,20 +83,15 @@
       margin: 1em;
     }
 
-    input[type=submit] {
-      padding: .3em 1.2em;
-      font-size: 1em;
-      width: 300px;
-      margin-bottom: 1em;
-    }
 
-    input[type=submit]:disabled,
-    button[type=submit]:disabled,
-    textarea {
-      background-color: #eee;
-      color: grey;
-      border: 1px solid grey;
-      cursor: not-allowed;
+
+    /* *************** FORM PSEUDO STUFF ************************* */
+
+    input[type=text]:focus, textarea:focus {
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid rgba(81, 203, 238, 1);
     }
 
     textarea:disabled {
@@ -91,6 +105,43 @@
       color: grey;
     }
 
+    input[type="checkbox"]:enabled + label,
+    input[type="radio"]:enabled + label {
+      /* font-weight: bold;*/
+      color: grey;
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      font-weight: bold;
+      color: green;
+    }
+
+    input[type=submit]:disabled,
+    button[type=submit]:disabled,
+    textarea {
+      background-color: #eee;
+      color: grey;
+      border: 1px solid grey;
+      cursor: not-allowed;
+    }
+
+    input:valid:focus {
+      outline: 0;
+      border: none;
+      box-shadow: 0 0 3px 6px hsla(120, 100%, 39%, 0.3);
+    }
+
+    input[type=text]:invalid:focus {
+      outline: 0;
+      border: none;
+      box-shadow: 0 0 3px 6px rgba(255, 0, 0, 0.3);
+    }
+
+    input[type="email"]:required {
+        border:2px solid tomato;
+    }
+
   </style>
 </head>
 <body>
@@ -99,40 +150,39 @@
   </h1>
   <p>The above heading has a:link, a:visited, a:hover and a:active aplied.</p>
   <hr>
-  <p>The form below has :focus, :disabled, </p>
+  <p>The form below has :focus, :disabled, :enabled, :checked, :required, :invalid, </p>
 
-  <div class="container">
+  <div class="fcontainer">
     <form action="#">
 
       <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
+      <input type="text" id="fname" name="fname" value="Vincent" valid><br>
       <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="text" id="lname" name="lname" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <p>Choose your preference:</p>
+      <input type="radio" id="pizza" value="Pizza">
+      <label for="pizza">Pizza</label>
+      <input type="radio" id="calzone" value="calzone">
+      <label for="calzone">Calzone</label><br><br>
   
-      <input type="checkbox" id="checkbox-1" disabled><label for="checkbox-1">First Choice (disabled)</label>
-      <input type="checkbox" id="checkbox-2"><label for="checkbox-2">Second Choice</label>
+      <p>Pick your extra's:</p>
+      <input type="checkbox" id="checkbox-1" disabled><label for="checkbox-1">Pineapple</label>&nbsp;
+      <input type="checkbox" id="checkbox-2"><label for="checkbox-2">Cherry Tomatos</label>&nbsp;
+      <input type="checkbox" id="checkbox-3"><label for="checkbox-3">Mushrooms</label>&nbsp;
       <br>
-      <br>
-
-      <br>
-      <input type="radio" id="radio-1"><label for="radio-1">First Choice</label>
-      <input type="radio" id="radio-2" disabled><label for="radio-2">Second Choice (disabled)</label>
-      <br>
-
       <br>
       <textarea name="sth" id="sth" cols="30" rows="10" disabled>I'm disabled</textarea>
       <br>
       <br>
-
-      <input type="submit" value="Submit (<input>) Enabled">
-      <input type="submit" value="Submit (<input>) Disabled" disabled>
-      <br>
-      <br>
-
-      <button type="submit" disabled>Submit Button (disabled)</button>
-      <button type="submit">Submit Button (enabled)</button>
-
+      <input type="submit" value="Submit" disabled>
     </form>
+  </div>
+  <hr>
+  <div class="fcontainer">
+    <p style="text-align:center; line-height: 24px;"><span style="font-weight: bolder;">Elements below styled using:</span><br><br> :nth-child() <br>:nth-last-child(), <br>:nth-of-type(), <br>:only-of-type</p>
   </div>
 
 </body>

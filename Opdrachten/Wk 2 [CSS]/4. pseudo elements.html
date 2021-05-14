@@ -20,6 +20,38 @@
       font-size: 26px;
       line-height: 0px;
     }
+
+    .op5div {
+      position: relative;
+      height: 294px;
+      background-image: url(img/turtle.jpg);
+      background-size: contain;
+      display: flex;
+    }
+
+    .op5div::before {
+      content: ""; /* :before and :after both require content*/
+    }
+
+    .op5div::after {
+      content: ""; /* ::before and ::after both require content */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+      opacity: .6;
+    }
+
+    .op5div > p {
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      background-color: hsla(0, 0%, 100%, 0.5);
+      z-index: 1;
+    }
+
   </style>
 
 </head>
@@ -58,10 +90,10 @@
       <p><span class="code" style="line-height: 40px;">:visited</span> is a pseudo-class used to select and style visited links in a page.</p>
       <p><span class="code" style="line-height: 40px;">:link</span> is a pseudo-class used to select and style links in a page. It is important to note, though, that it will only select links &lt;a&gt; that have an href attribute.</p>
 
-      <p><span class="code" style="line-height: 40px;">:disabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are disabled.</p>
       <p><span class="code" style="line-height: 40px;">:checked</span> Radio and Checkbox elements can be toggled by the user. Some menu items are “checked” when the user selects them. When such elements are toggled “on” the :checked pseudo-class applies.</p>
       <p><span class="code" style="line-height: 40px;">:enabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are enabled.</p> 
       <p><span class="code" style="line-height: 40px;">:disabled</span> is a pseudo-class selector used to select and style user interface elements (usually form elements) that are disabled.</p>
+      <p><span class="code" style="line-height: 40px;">:required</span> is a CSS pseudo-class selector used to select form elements that are required.</p>
 
       <p><span class="code" style="line-height: 40px;">:invalid</span> is a CSS pseudo-class used to select and style form &lt;input&gt; elements whose value is invalid according to its type specified in the type attribute.</p>
       <p><span class="code" style="line-height: 40px;">:valid</span> is a CSS pseudo-class used to select and style form &lt;input&gt; elements whose values validate according to their type specified in the type attribute.</p>
@@ -84,7 +116,7 @@
       <p class="vraag">Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
       <iframe src="4.opdracht3.html" frameborder="0" style="height: 600px;"></iframe>
       <hr>
-      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning"> CSS Relative positioning (MDN Web Docs) </a></p>
+      <p class="sources">Source: <a href="https://tympanus.net/codrops/css_reference/#section_css-pseudo-class"> CSS pseudo classes &amp; elements (codrops) </a></p>
       <br>
     </div>
 
@@ -104,9 +136,12 @@
       <h2 id="opdracht5">Opdracht 5</h2>
       <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
       <img src="img/opdracht5.png" alt="afbeelding opdracht5">
-      
       <hr>
-      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#absolute_positioning"> CSS Absolute positioning (MDN Web Docs) </a></p>
+      <div class="op5div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem voluptates assumenda alias. Quia, facilis ullam quidem sapiente corrupti aperiam rem obcaecati laudantium a similique voluptatem! Delectus odio maiores voluptates!</p>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays/"> Use CSS ::before and ::after for spicy image overlays (Byran Robinson) </a></p>
       <br>
     </div>
 
