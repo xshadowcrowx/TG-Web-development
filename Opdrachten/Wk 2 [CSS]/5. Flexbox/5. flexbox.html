@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+
+  <!-- Preconnect to Google Fonts (for speed) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- include styles.css -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+
+    /* ************************************************************ */
+
+    .container1 {
+      display: flex;
+      background-color: yellowgreen;
+    }
+
+    .pblock {
+      margin: 4px;
+      padding: 2px 20px 2px 20px;
+      text-align: center;
+      font-weight: bold;
+      background-color: blanchedalmond;
+    }
+
+    /* ************************************************************ */
+
+  </style>
+
+</head>
+
+<body>
+  
+  <h1 style="font-size: 160px; line-height: 120px;"><span style="font-size: 50px; color: gray; line-height: 20px !important;">CSS:</span> <br> FLEX <br> BOX</h1>
+
+  <div class="container">
+
+      <br>
+    
+    <!-- Question 1 -->
+    <div class="questionBlock">  
+      <h2 id="opdracht1">Opdracht 1</h2>
+      <p class="vraag">Zie het onderstaande voorbeeld en maak het na met flex. Gebruik geen width, height of line-height.</p>
+      <img src="img/opdracht1.gif" alt="afbeelding opdracht1">
+      <hr>
+      <div class="container1" style="justify-content: flex-start;">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> A guide to flexbox (css-tricks)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 2 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht2">Opdracht 2</h2>
+      <p class="vraag">Zie het onderstaande voorbeeld, de items staan nu anders uitgelijnd. Maak het na met flex. Gebruik geen width, height of line-height.</p>
+      <img src="img/opdracht2.gif" alt="afbeelding opdracht2">
+      <hr>
+      <div class="container1" style="justify-content: flex-end;">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> A guide to flexbox (css-tricks)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 3 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht3">Opdracht 3</h2>
+      <p class="vraag">Zie het onderstaande voorbeeld, een van de items is breder dan de rest. Maak het na met flex. Gebruik geen width, height of line-height.</p>
+      <img src="img/opdracht3.gif" alt="afbeelding opdracht3">
+      <hr>
+      <div class="container1">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock" style="flex-grow: 6;">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> A guide to flexbox (css-tricks)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 4 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht4">Opdracht 4</h2>
+      <p class="vraag">De property ‘justify-content’ is een property die door flex gebruikt wordt. Maak verschillende voorbeelden door gebruik te maken van de justify-content property.</p>
+      <hr>
+      <br>
+      <p style="line-height: 30px; text-align: center;">See <i>(opdracht 1 & 2)</i> for examples of: <br> <span class="code">justify-content: left;</span> and <span class="code">justify-content: right;</span>.</p>
+      <br>
+      <p><b>Space-around:</b></p>
+      <div class="container1" style="justify-content: space-around;">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <br>
+      <p><b>Space-evenly:</b></p>
+      <div class="container1" style="justify-content: space-evenly">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <br>
+      <p><b>Space-between:</b></p>
+      <div class="container1" style="justify-content: space-between">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <br>
+      <p><b>Stretch:</b></p>
+      <div class="container1" style="justify-content: stretch">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock" style="flex-grow: 2;">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock" style="flex-grow: 2;">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> A guide to flexbox (css-tricks)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 5 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht5">Opdracht 5</h2>
+      <p class="vraag">De property ‘align-items’ is een property die door flex gebruikt wordt. Maak verschillende voorbeelden door gebruik te maken van de align-items property.</p>
+      <hr>
+      <p><b>Center:</b></p>
+      <div class="container1" style="height:100px; align-items:center">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <br>
+      <p><b>Stretch:</b></p>
+      <div class="container1" style="height:100px; align-items:stretch">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <br>
+      <p><b>Baseline:</b> <i>(doesn't work for some reason?)</i></p>
+      <div class="container1" style="height:100px; align-items:baseline">
+        <div class="pblock">
+          <p>1</p>
+        </div>
+        <div class="pblock">
+          <p>2</p>
+        </div>
+        <div class="pblock">
+          <p>3</p>
+        </div>
+        <div class="pblock">
+          <p>4</p>
+        </div>
+        <div class="pblock">
+          <p>5</p>
+        </div>
+        <div class="pblock">
+          <p>6</p>
+        </div>
+      </div>
+      <hr>
+      <p class="sources">Source: <a href="https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays/"> Use CSS ::before and ::after for spicy image overlays (Byran Robinson) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 6 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht6">Opdracht 6</h2>
+      <p class="vraag">Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken zijn:</p>
+      <ul>
+        <li>display</li>
+        <li>justify-content</li>
+        <li>flex-direction</li>
+      </ul>
+      <img src="img/opdracht6.gif" alt="afbeelding opdracht6">
+      <hr>
+      <p class="antwoord">.</p>
+      <br>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"> CSS type selectors (MDN Web Docs) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 7 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht7">Opdracht 7</h2>
+      <p class="vraag">Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken zijn:</p>
+      <ul>
+        <li>display</li>
+        <li>justify-content</li>
+        <li>flex-direction</li>
+        <li>align-items</li>
+      </ul>
+      <img src="img/opdracht7.gif" alt="afbeelding opdracht7">
+      <hr>
+      <p class="antwoord">.</p>
+      <br>
+      <hr>
+      <p class="sources">Source: <a href="https://dzone.com/articles/css-position-relative-vs-position-absolute"> CSS position relative vs position absolute (Web Dev Zone) </a></p>
+      <br>
+    </div>
+
+    <!-- Question 8 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht8">Opdracht 8</h2>
+      <p class="vraag">Zie het onderstaande voorbeeld en maak het na met flexbox.</p>
+      <img src="img/opdracht8.png" alt="afbeelding opdracht8">
+      <hr>
+      <p class="antwoord">.</p>      
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"> CSS Pseudo-classes and pseudo-elements (MDN Web Docs)</a>,<br> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> CSS Pseudo-elements (w3schools)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 9 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht9">Opdracht 9</h2>
+      <p class="vraag">Zie het onderstaande voorbeeld en maak het na met flexbox. Zorg voor een leuk effect als je met de muis over de ‘play’ knop heen gaat. Optioneel: gebruik .gif bestanden als images voor een levendig effect.</p>
+      <img src="img/opdracht9.png" alt="afbeelding opdracht9">
+      <hr>
+      <p class="antwoord">.</p>
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"> CSS Pseudo-classes and pseudo-elements (MDN Web Docs)</a>,<br> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> CSS Pseudo-elements (w3schools)</a></p>
+      <br>
+    </div>
+
+    <!-- Question 10 (incomplete) -->
+    <div class="questionBlock">  
+      <h2 id="opdracht10">Opdracht 10</h2>
+      <p class="vraag">Verzin zelf een opdracht met flexbox. Irriteer je medecursist ermee door je medecursist te vragen om het na te maken.</p>
+      <hr>
+      <p class="antwoord">.</p> 
+      <hr>
+      <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"> CSS Pseudo-classes and pseudo-elements (MDN Web Docs)</a>,<br> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> CSS Pseudo-elements (w3schools)</a></p>
+      <br>
+    </div>
+
+  </div>
+
+</body>

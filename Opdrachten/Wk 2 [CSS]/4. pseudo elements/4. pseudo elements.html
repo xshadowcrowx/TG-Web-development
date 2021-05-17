@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <!-- include styles.css -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 
   <style>
     h3 {
@@ -20,6 +20,69 @@
       font-size: 26px;
       line-height: 0px;
     }
+
+    /* *********************************************************** */
+
+    .op4div {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      background-color: rgb(67, 194, 135);
+      /*vertical-align: middle;*/
+      text-align: center;
+    }
+
+    .op4div > p {
+      display: inline;
+      vertical-align: middle;
+      margin: auto;
+      color: white;
+    }
+
+    /* vertical line */
+    .corner-right::after {
+      content:'';
+      position: absolute;
+      background-color: pink;
+      width: 6px;
+      height: 100%;
+      top: 0px;
+      right:0px;
+    }
+
+    /* horizontal line */
+    .corner-right::before{
+      content:'';
+      position: absolute;
+      background-color: pink;
+      width: 8%;
+      height: 6px;
+      bottom: 0;
+      right:0px;
+    }
+
+    /* vertical line */
+    .corner-left::after {
+      content:'';
+      position: absolute;
+      background-color: red;
+      width: 6px;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+    }
+    /* horizontal line */
+    .corner-left::before {
+      content:'';
+      position: absolute;
+      background-color: red;
+      width: 8%;
+      height: 6px;
+      top: 0;
+      left:0px;
+    }
+
+    /* *********************************************************** */
 
     .op5div {
       position: relative;
@@ -110,7 +173,7 @@
       <br>
     </div>
 
-    <!-- Question 3 -->
+    <!-- Question 3 (incomplete) -->
     <div class="questionBlock">  
       <h2 id="opdracht3">Opdracht 3</h2>
       <p class="vraag">Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
@@ -123,9 +186,13 @@
     <!-- Question 4 -->
     <div class="questionBlock">  
       <h2 id="opdracht4">Opdracht 4</h2>
-      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element.<br> Kun jij dit namaken?</p>
       <img src="img/opdracht4.gif" alt="afbeelding opdracht4">
-      <p class="antwoord">.</p>
+
+      <hr>
+      <div class="op4div corner-left corner-right">
+        <p class="corner-right">Button</p>
+      </div>
       <hr>
       <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning"> CSS Relative positioning (MDN Web Docs) </a></p>
       <br>
@@ -134,7 +201,7 @@
     <!-- Question 5 -->
     <div class="questionBlock">  
       <h2 id="opdracht5">Opdracht 5</h2>
-      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+      <p class="vraag">Hieronder vind je een voorbeeld van het gebruik van een pseudo-element.<br> Kun jij dit namaken?</p>
       <img src="img/opdracht5.png" alt="afbeelding opdracht5">
       <hr>
       <div class="op5div">
@@ -149,8 +216,8 @@
     <div class="questionBlock">  
       <h2 id="opdracht6">Opdracht 6</h2>
       <p class="vraag">Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken? Zoek een afbeelding op internet.</p>
-      <img src="img/opdracht6.gif" alt="afbeelding opdracht6>
-      
+      <img src="img/opdracht6.gif" alt="afbeelding opdracht6">
+      <br>
       <hr>
       <p class="sources">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"> CSS type selectors (MDN Web Docs) </a></p>
       <br>
@@ -160,7 +227,8 @@
     <div class="questionBlock">  
       <h2 id="opdracht7">Opdracht 7</h2>
       <p class="vraag">Hieronder vind je wederom een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
-      <img src="img/opdracht7.gif" alt="afbeelding opdracht7>
+      <img src="img/opdracht7.gif" alt="afbeelding opdracht7">
+      <br>
       <hr>
       <p class="sources">Source: <a href="https://dzone.com/articles/css-position-relative-vs-position-absolute"> CSS position relative vs position absolute (Web Dev Zone) </a></p>
       <br>
