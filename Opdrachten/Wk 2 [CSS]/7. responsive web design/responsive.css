@@ -132,7 +132,7 @@ nav a {
 }
 
 /* 5 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .page-title {
     display: flex;
     flex: 1 1;
@@ -140,8 +140,65 @@ nav a {
     align-items: center;
   }
 
+  .footer {
+    text-align: center;
+  }
+}
+
 /* 6 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .page-title {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  header {
+    position: sticky;
+    max-width: 33%;
+    top: 0;
+    margin-bottom: 168px;
+    order: 1;
+  }
+
+  .main {
+    max-width: 66%;
+    order: 2;
+  }
+
+  .footer {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    /*text-align: center;*/
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    text-align: center;
+  }
+}
 
 
 /* info source: https://css-tricks.com/a-complete-guide-to-css-media-queries */
