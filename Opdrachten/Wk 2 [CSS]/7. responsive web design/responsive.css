@@ -97,6 +97,8 @@ nav a {
   bottom: 2px;
 }
 
+
+
 /* **************************************************** */
 /* ****************** ASSIGNMENTS ********************* */
 /* **************************************************** */
@@ -189,8 +191,12 @@ nav a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .page-title {
+    padding: 20px;
+    /*font-size: 20px;*/
+  }
   .footer {
-    /*text-align: center;*/
+    text-align: center;
   }
 }
 
