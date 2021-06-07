@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wk 5 javascript assignments</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="opdrachten.js"></script>
+
+  <style>
+    body {
+      padding: 60px;
+    }
+    .label1 {
+      padding: 6px;
+      background-color: lightgrey;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container" style="margin-top: 40px;">
+  
+    <h1>Javascript</h1>
+
+    <br><hr><br>
+
+    <h2>Opdracht 1</h2>
+    <p>We onderzoeken het verschil tussen var, let en const. Gegeven zijn een aantal voorbeelden - schrijf eerst je verwachtingen op voordat je ze zelf nabootst. Kijk vervolgens wat er bij jou in de console gelogd wordt - is dat wat je verwachtte? Zo nee, deel het dan aan het einde van de dag met je groep.</p>
+
+    <h3>A.</h3><img src="img/opdracht1.a.gif" class="img-fluid">
+    <p><span class="label1">Expectation:</span> it will only log the second value, as the variable's value was changed.</p>
+    <p><span style="font-weight: bold;">Result:</span></p>
+    <code>Uncaught SyntaxError: Identifier 'letOefening1a' has already been declared.</code><br>
+
+    <br>
+
+    <h3>B.</h3><img src="img/opdracht1.b.gif" class="img-fluid">
+    <p><span class="label1">Expectation:</span> First value logged to console, variable is changed and new value is logged to console.</p>
+    <p><span style="font-weight: bold;">Result:</span></p>
+    <code>Let Tekst</code><br>
+    <!-- <code>'Let Tekst Twee!'</code><br> (nodejs) -->
+    <code>Let Tekst Twee!</code><br>
+
+    <br>
+
+    <h3>C.</h3><img src="img/opdracht1.c.gif" class="img-fluid">
+    <p><span class="label1">Expectation:</span> first one logged, the second one throws an error because constants cannot be changed.</p>
+    <p><span style="font-weight: bold;">Result:</span></p>
+    <code>Const Tekst</code><br>
+    <code>Uncaught TypeError: Assignment to constant variable.</code><br>
+    <code>Const Tekst</code><br>
+
+    <br>
+
+    <h3>D.</h3><img src="img/opdracht1.d.gif" class="img-fluid">
+    <p><span class="label1">verwachting:</span> first one throws an error due to an undefined variable. Second one logs to console. Variable value is changed and third result is logged to console.</p>
+    <p><span style="font-weight: bold;">Result:</span></p>
+    <code>Var Tekst</code><br>
+    <code>Var Tekst Twee!</code><br>
+    <code>Var Tekst Drie!</code><br>
+
+    <br><b>Learned:</b>
+    <p>To change an existing variable you need to use the identifier. (excercise 1)</p>
+    <p>Constants are a different kind of animal... (excercise 3)</p>
+    <p>Variables can be declared <i>(and modified...)</i> using just an identifier. i.e. without prefixing let or var. (excercise 4)</p>
+
+
+    <br><hr><br><br>
+
+
+    <!-- OPDRACHT 2 -->
+
+    <h2>Opdracht 2</h2>
+    <p>Gegeven de volgende String:</p>
+
+    <h3>A.</h3><img src="img/opdracht2.1.gif" class="img-fluid">
+    <br><br>
+    <p><span style="font-weight: bold;">Result: </span> see console.</p>
+    <br>
+
+    <h3>B.</h3>
+    <br>
+    <p><span style="font-weight: bold;">Result: </span></p>
+    <p><b>A:</b> if the first value is higher than the second, it will show part of the string.</p>
+    <p><b>B:</b> if the second value is higher than the first, it will show part of the string.</p>
+    <p><b>C:</b> appears to return blank when using negative values.</p>
+    <p><b>D:</b> when using negative values it will show part of the string, as long as the first value is larger than the second. Otherwise it will return blank.</p>
+    <br>
+
+    <h3>C.</h3><img src="img/opdracht2.3.gif" class="img-fluid">
+    <br><br>
+    <p><span style="font-weight: bold;">Result: </span> see console.</p>
+    
+
+    <br><hr><br><br>
+
+    <!-- OPDRACHT 3 -->
+
+    <h2>Opdracht 3.1</h2>
+    <p>Conditions werken erg vaak met operators.
+       Om goed met conditions te kunnen werken, moet je operators echt goed begrijpen.
+       Daarom onderzoeken we ze hier nogmaals:</p>
+    
+    <p><b>A:</b> == is used for comparing two variables, but it ignores the datatype of variable. === is used for comparing two variables, but this operator also checks datatype and compares two values.</p>
+    <p><b>B:</b> ( &gt; ) is the "more than" comparison operator. When combined with an ( = ) it forms the more than or equal to comparison operator ( &gt;= ) .<br> ( &lt; ) is the "less than" comparison operator. When combined with an ( = ) it forms the less than or equal to comparison operator ( &lt;= ) .</p>
+
+    <p><b>G through K:</b> it at all works as intended. Placing the <span class="highlight">if</span>, <span class="highlight">else if</span> or <span class="highlight">else</span> in a different block has no effect... provided we avoid syntax errors and empty declartions.</p>
+
+    <h2>Opdracht 3.2</h2>
+    <p><b>A &amp; B:</b> works as expected, though I must note that <span class="highlight">if</span>, <span class="highlight">else if</span> will break when not paired with an <span class="highlight">else</span>.</p>
+    <p><b>C:</b> see JS doc and console.</p>
+    <p><b>D:</b> see JS doc and console.</p>
+    <p><b>E:</b> see JS doc and console.</p>
+
+    <h2 class="display-6">Learned</h2><br>
+    <h4>What is = in JavaScript?</h4>
+    <p>Equal to (=) is an assignment operator, which sets the variable on the left of the = to the value of the expression that is on its right. This operator assigns lvalue to rvalue.</p>
+    <h4>What is == in JavaScript?</h4>
+    <p>Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.
+       So, when you compare string with a number, JavaScript converts any string to a number. 
+       An empty string is always converts to zero. 
+       A string with no numeric value is converts to NaN (Not a Number), which returns false.</p>
+    <h4>What is === in JavaScript?</h4>
+    <p>=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. 
+       This operator performs type casting for equality. If we compare 2 with "2" using ===, then it will return a false value.</p>
+    <p><b>Source:</b> <a href="https://www.guru99.com/difference-equality-strict-operator-javascript.html#10">Difference Between =, ==, and === in JavaScript</a> - <i>guru99</i></p>
+
+    <br><hr><br><br>
+
+    <h2>Opdracht 4</h2>
+    <p>We gaan functies oefenen door bij het begin te beginnen...</p>
+    
+    <p><b>A:</b> <button class="btn btn-primary" onclick="helloBtn1()">Hello!</button> <span id="btnResult1"></span></p>
+    <div class="input-group mb-3" style="max-width: 300px;">
+      <span class="input-group-text"> <b>B:</b></span>
+      <input type="text" class="form-control" placeholder="Username" id="input1" onchange="helloInput1(this.value)">
+    </div>
+    <p><b>C:</b> <button class="btn btn-info" onclick="paramCon1()">Hello!</button> <span id="paramConResult"></span></p>
+    <p><b>D:</b> See js file and console</p>
+
+    <br><hr><br><br>
+
+    <h2>Opdracht 5</h2>
+    <p>We oefenen met Arrays.</p>
+
+    <br><hr><br><br>
+
+    <h2>Opdracht 6</h2>
+    <p>We oefenen met het aanmaken van Objects.</p>
+
+    <br>
+
+  </div>
+
+</body>
+</html>

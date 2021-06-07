@@ -1,0 +1,115 @@
+/* define globals */
+
+
+
+/*
+  |
+  |
+  |
+  |           Stolen from somewhere ;)
+  |          --------------------------
+  |
+  |
+  |
+ */
+
+
+*, ::after, ::before {        /* note: I may come to regret this specificity later on... */
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "";
+  -webkit-transform: skew(0,30deg);
+  transform: skew(0,30deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -30vw;
+  height: 70vh;
+  background: hsl(0, 0%, 99%);
+  z-index: -100;
+  box-shadow: inset 0 0 100px hsla(220, 24%, 12%, 0.015),
+              inset 0 0 250px hsla(220, 24%, 12%, 0.015),
+              inset 0 0 30px hsla(220, 24%, 12%, 0.04);
+}
+
+.single-download .large-features .feature:nth-child(odd) {
+  background: hsl(0, 0%, 98%);
+  box-shadow: inset 0 0 .625rem hsla(0, 0%, 0%, 0.1),inset 0 0 2.188rem hsla(0, 0%, 0%, 0.03);
+}
+
+.single-download .small-features {
+  background: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  box-shadow: 0 0 13px hsla(233, 13%, 72%, 0.15),0 6px 20px hsla(220, 24%, 12%, 0.05);
+}
+
+
+/* ***************** WELCOME ***************** */
+
+
+.welcome:before {
+  left: -15vw;
+  top: -30%;
+  background: hsl(0, 0%, 100%);
+  background: -moz-linear-gradient(left,hsl(217, 29%, 91%) 0,hsl(0, 0%, 100%) 100%);
+  background: -webkit-linear-gradient(left,hsl(217, 29%, 91%) 0,hsl(0, 0%, 100%) 100%);
+  background: linear-gradient(to right,#e1e6ef 0,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e7ef', endColorstr='#ffffff', GradientType=1);
+}
+
+.welcome:after, .welcome:before {
+  content: '';
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+
+
+/* ***************** COMPONENTS ***************** */
+
+
+.feature-icon {
+  border-radius: 50%;
+  min-width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  box-shadow: 0 2px 4px hsla(210, 11%, 15%, 0.1),0 7px 14px hsla(210, 11%, 15%, 0.1);
+  font-size: 27px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: .625rem;
+  box-shadow: 0 .46875rem 2.1875rem hsla(212, 8%, 38%, 0.1),0 .9375rem 1.40625rem hsla(212, 8%, 38%, 0.1),0 .25rem .53125rem hsla(212, 8%, 38%, 0.12),0 .125rem .1875rem hsla(212, 8%, 38%, 0.1);
+}
+
+.card-large {
+  border-radius: 14px;
+  padding: 35px 45px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 0 60px hsla(250, 15%, 16%, 0.1),0 5px 10px hsla(250, 15%, 16%, 0.1);
+}
+
+/*
+  |
+  |
+  |
+  |           End stolen ./ continue bootstrap overrides! 
+  |          ---------------------------------------------
+  |
+  |
+  |
+ */
+
+ .text-primary {
+  color: #007bff!important;
+}
+
