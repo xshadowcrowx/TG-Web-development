@@ -221,8 +221,6 @@ console.log('Hoofdstuk 4')
 console.log('-----------------------------')
 
 // opdracht 1
-
-
 /* A */ function helloBtn1(_onclick) {
                 console.log("Hello World")
                 document.getElementById("btnResult1").innerHTML = " &nbsp; Check the Console!";
@@ -246,3 +244,14 @@ console.log(' ')
 console.log('--------')
 console.log('-----------------------------')
 
+/*
+let num5a = 5
+let num5b = 2
+*/
+
+/*
+function calc(num5a, num5b) {
+        return num5a + num5b
+}
+console.log(calc)
+*/
