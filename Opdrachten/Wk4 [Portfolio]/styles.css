@@ -25,7 +25,7 @@ body::after {
   position: absolute;
   left: 0;
   right: 0;
-  top: -30vw;
+  top: -10vw;
   height: 70vh;
   background: hsl(0, 0%, 99%);
   z-index: -100;
