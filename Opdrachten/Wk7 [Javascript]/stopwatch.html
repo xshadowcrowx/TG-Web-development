@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop Watch</title>
+
+  <style>
+
+    /* global classes */
+    body {
+      margin-top: 12.5%;
+      padding: 0px;
+      background-image: url("img/ocean.jpg");
+      background-color: #cccccc;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* element classes */
+    .container {
+      max-width: 400px;
+      max-height: 400px;
+      margin: auto;
+    width: 50%;
+    }
+
+    .outer_circle {
+      width: 400px;
+      height: 400px;
+      padding: 10px;
+      background-color: grey;
+      
+      border-radius: 50%;
+      filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .inner_circle {
+      width: 360px;
+      height: 360px;
+
+      background-color: black;
+      border: 6px solid rgb(150, 150, 150);
+      border-radius: 50%;
+
+      filter: drop-shadow(0 0 1.2rem rgb(56, 56, 56));
+      vertical-align: middle;
+      align-self: center;
+    }
+
+    .brand {
+      margin: 40px;
+      font-size:40px;
+    }
+
+    #display {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 80px;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .buttons {
+      margin: 0px;
+      text-align: center;
+    }
+
+    .button {
+      width: 72px;
+      height: 72px;
+      text-transform: uppercase;
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 50%;
+
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .button:active {
+      width: 68px;
+      height: 68px;
+      border: 3px solid white;
+    } 
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Stopwatch html -->
+  <div class="container">
+    <div class="outer_circle">
+      <div class="inner_circle">
+        <p class="brand">skmei</p>
+        <!-- <div id="counter">  -->
+          <div id="display">00:00:00</div>
+        <!-- </div>  -->
+        <div class="buttons">
+          <button id="startB" class="button" style="background-color: green">START</button> &nbsp;
+          <button id="pauseB" class="button" style="background-color: orange">PAUSE</button> &nbsp;
+          <button id="stopB"  class="button" style="background-color: red">STOP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+  
+  <script>
+
+    /* anonymous functions capture click events                    */
+    /* *********************************************************** */
+    /*
+    document.getElementById('startB').onclick = function () {
+      console.log('pushed: start')
+      // startButton();
+    }
+
+    document.getElementById('pauseB').onclick = function () {
+      console.log('pushed: pause')
+      // pause();
+    }
+
+    document.getElementById('stopB').onclick = function () {
+      console.log('pushed: stop')
+      // stopButton();
+    }
+    */
+    /* *********************************************************** */
+
+  </script>
+  <script src="stopwatch.js"></script>
+</html>

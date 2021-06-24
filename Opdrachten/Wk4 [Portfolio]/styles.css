@@ -20,8 +20,8 @@
 
 body::after {
   content: "";
-  -webkit-transform: skew(0,30deg);
-  transform: skew(0,30deg);
+  -webkit-transform: skew(0,8deg);
+  transform: skew(0,8deg);
   position: absolute;
   left: 0;
   right: 0;
@@ -66,7 +66,7 @@ body::after {
   position: absolute;
   width: 50vw;
   height: 80vh;
-  transform: rotate(-25deg);
+  transform: rotate(-45deg);
   z-index: 1;
 }
 
@@ -92,9 +92,11 @@ body::after {
 }
 
 .card-large {
-  border-radius: 14px;
+  /*border-radius: 14px;(original)*/
+  border-radius: 6px;
   padding: 35px 45px;
-  background: hsl(0, 0%, 100%);
+  /*background: hsl(0, 0%, 100%);*/
+  background: rgb(252, 252, 252);
   box-shadow: 0 0 60px hsla(250, 15%, 16%, 0.1),0 5px 10px hsla(250, 15%, 16%, 0.1);
 }
 
