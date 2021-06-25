@@ -13,6 +13,9 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Custom CSS + overrides -->
   <link rel="stylesheet" href="styles.css">
   
@@ -32,7 +35,31 @@
     h1 {
       margin: 20px 0;
       text-transform: uppercase;
-      font-weight: 900;
+      font-family: 'Poppins', sans-serif;
+      font-size: 9vw !important;
+      font-weight: 900 !important;
+    }
+
+    p {
+      font-family: 'Halant', serif;
+      color: rgb(66, 66, 66);
+    }
+
+    hr {
+      color: lightgrey;
+    }
+
+    .unselectable {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .huge {
+      font-size: 11vw;
     }
 
     .subHeadline {
@@ -41,7 +68,11 @@
 
     .copyright {
       padding: 20px;
+      color: lightgrey;
+      text-shadow: 0 1px 2px hsla(210, 5%, 39%, 0.068),0 1px 3px hsla(210, 11%, 15%, 0.048);
     }
+
+    
     
   </style>
 
@@ -49,27 +80,64 @@
 <body>
 
   <div class="container">
+    <h1>VMorris.xyz</h1>
     <div>
-      <h1>VMorris.xyz</h1>
-      <p>Welcome to my playground.</p>
+      <div style="margin: 20px;">
+        <img src="v1h.png" alt="picture of author" class="img-fluid feature-picture">
+      </div>
+      
+      <p>Welcome to my secret lab...</p>
       <p>I'm a front-end developer with a creative background, currently sharpening my skills at TechGrounds.</p>
-      <p>Some of the technologies I dabble in are:</p>
-      <p>(images here)</p>
-      <p>See my portfolio's for examples of my work</p>
+
+      <br><br><br><br>
+      <p>The projects listed are built using:</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; max-width: 420px; margin: 0 auto;">
+        <i class="fab fa-html5 fa-5x"></i>
+        <i class="fab fa-js fa-5x"></i>
+        <i class="fab fa-css3-alt fa-5x"></i>
+      </div>
+      <br><br><br>
+      <p>See portfolio(s) below for examples of my work...</p>
+      <br>
       <p></p>
     </div>
 
-    <!--  -->
+    <!-- Current portfolio project -->
     <div class="card-large">
       <h3>Current Portfolio Project</h3>
+      <p>
+        image below shows current speed metrics. <br>
+        click it to view project.
+      </p>
+      <hr>
       <a href="TG-WK4/index.html"><img src="TG-WK4.cSpeed.png" alt="Portfolio 4 speed test results" class="img-fluid"></a>
     </div>
-    <h1 class="subHeadline" style="color: white;">Extra...</h1>
+
+    <!-- BIG divider -->
+    <h1 class="subHeadline unselectable huge" style="color: white;">... extra ...</h1>
+    
+    <!-- Previous portfolio project -->
     <div class="card-large">
       <h3 style="font-weight: 600;">2018 Portfolio</h3>
+      <p>
+        image below shows current speed metrics. <br>
+        click it to view project.
+      </p>
       <hr>
-      <a href="old/index.html"><img src="old1.cSpeed.png" alt="Portfolio 3 speed test results" class="img-fluid"></a>
+      <a href="old1/index.html"><img src="old1.cSpeed.png" alt="Portfolio 3 speed test results" class="img-fluid"></a>
     </div>
+
+    <br><br>
+    <p style="line-height: 60px; text-transform: uppercase; color: darkgrey;">
+      <b class="align-middle">f i n d &nbsp; m e &nbsp; o n</b> <br>
+      <a class="icon-link" href="https://github.com/xshadowcrowx" target="blank" ><i class="fab fa-github fa-5x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="icon-link" href="https://codepen.io/xshadowcrowx" target="blank" ><i class="fab fa-codepen fa-5x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="icon-link" href="https://www.linkedin.com/in/vincentmorris/" target="blank" ><i class="fab fa-linkedin fa-5x"></i></a>
+    </p>
+
+  </div>
+  <div class="footer">
+    
   </div>
   <p class="copyright">&copy; 2021 Vincent Morris - All rights reserved.</p>
   

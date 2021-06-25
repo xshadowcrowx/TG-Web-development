@@ -1,3 +1,8 @@
+/* @imports       */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant&display=swap');
+
 /* define globals */
 
 
@@ -73,6 +78,15 @@ body::after {
 
 /* ***************** COMPONENTS ***************** */
 
+.feature-picture {
+  border-radius: 50%;
+  min-width: 100px;
+  height: 100px;
+  line-height: 65px;
+  text-align: center;
+  box-shadow: 0 2px 4px hsla(210, 11%, 15%, 0.1),0 7px 14px hsla(210, 11%, 15%, 0.1);
+  font-size: 27px;
+}
 
 .feature-icon {
   border-radius: 50%;
@@ -115,3 +129,42 @@ body::after {
   color: #007bff!important;
 }
 
+
+
+/*
+  |
+  |
+  |
+  |           Custom components?
+  |          ---------------------------------------------
+  |
+  |
+  |
+ */
+
+
+.techList {
+  margin: 40px;
+  list-style-type: none !important;
+  display: inline;
+  text-align: center;
+}
+
+.techList > li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.techList > li > img {
+  max-width: 64px;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+/*
+.icon-link {
+  text-decoration: none;
+}
+*/
