@@ -1,0 +1,52 @@
+/*body {
+  text-align: center;
+}*/
+
+h1 {
+  margin: 2vh auto auto auto;
+  font-size: 6vw;
+}
+
+p {
+  margin-top: -14px;
+  margin-left: 26px;
+}
+
+.sliderContainer {
+  background-color: blue;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 600px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.sliderButton {
+  width: 10%;
+  /* insert height here... */
+  position: absolute;
+}
+
+.bLeft {
+  position: absolute;
+  left: 0px;
+  text-align: right;
+}
+
+.bLeft > .arrowL {
+  max-width: 60px;
+}
+
+.bRight {
+  position: absolute;
+  right: 0px;
+}
+
+.bRight > .arrowR {
+  max-width: 60px;
+  transform: rotate(180deg);
+}
+
